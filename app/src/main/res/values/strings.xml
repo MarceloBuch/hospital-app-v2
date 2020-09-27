@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">hospital</string>
+    <string name="welcome">HOSPITAL AVICCENA</string>
+    <string name="changes">As opções que o nosso app te oferece: </string>
+    <string name="location">Encontre a unidade mais próxima de você</string>
+    <string name="linkMain">Conheça nosso site</string>
+    <string name="btnFind">Procurar</string>
+    <string name="MapLocation">Abrir no mapa</string>
+    <string name="yourLocation">Sua localização</string>
+    <string name="nearestUnit">Unidade mais próxima</string>
+    <string name="btnContact">Entre em Contato</string>
+    <string name="btnEmer">Em caso de emergência, clique aqui!</string>
+    <string name="txtCont">CONTATOS DO HOSPITAL</string>
+    <string name="txtEnd">Endereço da unidade principal:</string>
+    <string name="txtLoc">Rua Padre Adelino, 901 - Belém - São Paulo SP</string>
+    <string name="btnSearch">Procurar no Mapa</string>
+    <string name="txtInNum">Telefone da unidade principal:</string>
+    <string name="txtNum">11 2602 0000</string>
+    <string name="btnCall">Ligar para essa unidade</string>
+    <string name="txtEmer">SOMENTE EM CASO DE EMERGÊNCIA, \n CLIQUE NO BOTÃO</string>
+    <string name="btnCallEmer">LIGAR PARA O SAMU</string>
+    <string name="btnTemp">Avaliar temperatura</string>
+</resources>
