@@ -10,16 +10,25 @@ import android.hardware.SensorManager;
 import android.os.Bundle;
 import android.widget.TextView;
 
+import com.example.hospital.helperr.AppPreferencesManager;
+
 public class activityTemp extends AppCompatActivity implements SensorEventListener {
     private TextView txtTemp;
     private SensorManager sensorManager;
     private Sensor tempSensor;
     private Boolean isTemperatureSensorAvailable;
     public TextView txtAva;
+    AppPreferencesManager preferencesManager;
 
     @Override
     public final void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        preferencesManager = new AppPreferencesManager(this);
+        if(preferencesManager.getDarkModeState()){
+            setTheme(R.style.AppThemeDark);
+        }else{
+            setTheme(R.style.AppTheme);
+        }
         setContentView(R.layout.activity_temp);
         txtTemp = findViewById(R.id.txtTemp);
         txtAva = findViewById(R.id.txtAva);

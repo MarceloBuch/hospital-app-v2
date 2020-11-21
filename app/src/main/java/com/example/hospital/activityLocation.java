@@ -15,6 +15,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+
+import com.example.hospital.helperr.AppPreferencesManager;
 import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -30,10 +32,17 @@ public class activityLocation extends AppCompatActivity {
     TextView yourLocation;
     TextView unitLocation;
     FusedLocationProviderClient fusedLocationProviderClient;
+    AppPreferencesManager preferencesManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        preferencesManager = new AppPreferencesManager(this);
+        if(preferencesManager.getDarkModeState()){
+            setTheme(R.style.AppThemeDark);
+        }else{
+            setTheme(R.style.AppTheme);
+        }
         setContentView(R.layout.activity_location);
         btnFind = findViewById(R.id.btnFind);
         btnOpenMap = findViewById(R.id.btnMap);
@@ -72,7 +81,6 @@ public class activityLocation extends AppCompatActivity {
                 Location location = task.getResult();
                 if(location != null){
                     try {
-
                         Geocoder geocoder = new Geocoder(activityLocation.this,
                                 Locale.getDefault());
                         List<Address> addresses = geocoder.getFromLocation(

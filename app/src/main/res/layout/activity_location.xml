@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="?attr/custonBGColor"
     tools:context=".activityLocation">
 
     <Button
@@ -11,6 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/MapLocation"
+        android:textColor="?attr/custonPrimaryTextColor"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.517"
@@ -23,6 +25,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/btnFind"
+        android:textColor="?attr/custonPrimaryTextColor"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -34,6 +37,7 @@
         android:layout_width="390dp"
         android:layout_height="69dp"
         android:hint="@string/yourLocation"
+        android:textColor="?attr/custonPrimaryTextColor"
         app:layout_constraintBottom_toTopOf="@+id/btnFind"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -45,6 +49,7 @@
         android:layout_width="389dp"
         android:layout_height="71dp"
         android:hint="@string/nearestUnit"
+        android:textColor="?attr/custonPrimaryTextColor"
         app:layout_constraintBottom_toTopOf="@+id/btnFind"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

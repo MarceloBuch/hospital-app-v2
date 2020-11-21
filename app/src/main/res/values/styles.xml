@@ -6,6 +6,34 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="custonBGColor">#FFFFFF</item>
+        <item name="custonPrimaryTextColor">@color/primaryText</item>
+        <item name="custonSecundaryTextColor">@color/secundaryText</item>
+        <item name="custonCardBGColor">@color/cardBG</item>
+        <item name="dialogTheme">@style/AlertDialogThemeLight</item>
+        <item name="alertDialogTheme">@style/AlertDialogThemeLight</item>
+    </style>
+    <style name="AppThemeDark" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryNight</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkNight</item>
+        <item name="colorAccent">@color/colorAccentNight</item>
+        <item name="custonBGColor">@color/colorPrimary</item>
+        <item name="custonPrimaryTextColor">@color/primaryTextNight</item>
+        <item name="custonSecundaryTextColor">@color/secundaryTextNight</item>
+        <item name="custonCardBGColor">@color/cardBGNight</item>
+        <item name="dialogTheme">@style/AlertDialogThemeDark</item>
+        <item name="alertDialogTheme">@style/AlertDialogThemeDark</item>
     </style>
 
+    <style name="AlertDialogThemeDark" parent="ThemeOverlay.AppCompat.Dialog.Alert">
+        <item name="android:background">?attr/custonBGColor</item>
+        <item name="dialogCornerRadius">10dp</item>
+        <item name="android:textColor">?attr/custonPrimaryTextColor</item>
+        <item name="android:textColorPrimary">?attr/custonPrimaryTextColor</item>
+    </style>
+
+    <style name="AlertDialogThemeLight" parent="ThemeOverlay.AppCompat.Dialog.Alert">
+        <item name="dialogCornerRadius">10dp</item>
+    </style>
 </resources>

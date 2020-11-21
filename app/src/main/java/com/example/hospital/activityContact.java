@@ -8,13 +8,22 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.hospital.helperr.AppPreferencesManager;
+
 public class activityContact extends AppCompatActivity {
 
     Button btnCall;
     Button btnSearchMap;
+    AppPreferencesManager preferencesManager;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        preferencesManager = new AppPreferencesManager(this);
+        if(preferencesManager.getDarkModeState()){
+            setTheme(R.style.AppThemeDark);
+        }else{
+            setTheme(R.style.AppTheme);
+        }
         setContentView(R.layout.activity_contact);
         btnCall =findViewById(R.id.btnCall);
         btnSearchMap = findViewById(R.id.btnSearchMap);

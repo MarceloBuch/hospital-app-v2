@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="?attr/custonBGColor"
     tools:context=".activityContact">
 
     <TextView
@@ -12,6 +13,7 @@
         android:layout_height="wrap_content"
         android:text="@string/txtCont"
         android:textStyle="bold"
+        android:textColor="?attr/custonPrimaryTextColor"
         app:layout_constraintBottom_toTopOf="@+id/txtInfoNum"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -23,6 +25,7 @@
         android:layout_height="wrap_content"
         android:text="@string/txtInNum"
         android:textStyle="bold"
+        android:textColor="?attr/custonPrimaryTextColor"
         app:layout_constraintBottom_toTopOf="@+id/txtInfoLoc"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
@@ -37,6 +40,7 @@
         android:layout_marginBottom="292dp"
         android:text="@string/txtEnd"
         android:textStyle="bold"
+        android:textColor="?attr/custonPrimaryTextColor"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -48,6 +52,7 @@
         android:layout_marginBottom="32dp"
         android:text="@string/txtNum"
         android:textStyle="bold"
+        android:textColor="?attr/custonPrimaryTextColor"
         app:layout_constraintBottom_toTopOf="@+id/btnCall"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
@@ -59,6 +64,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="28dp"
         android:text="@string/btnCall"
+        android:textColor="?attr/custonPrimaryTextColor"
         app:layout_constraintBottom_toTopOf="@+id/txtInfoLoc"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -72,6 +78,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="160dp"
         android:text="@string/btnSearch"
+        android:textColor="?attr/custonPrimaryTextColor"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.501"

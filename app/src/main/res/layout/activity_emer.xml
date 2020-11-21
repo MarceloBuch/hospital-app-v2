@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="?attr/custonBGColor"
     tools:context=".activityEmer">
 
     <TextView
@@ -13,6 +14,7 @@
         android:gravity="center"
         android:text="@string/txtEmer"
         android:textStyle="bold"
+        android:textColor="?attr/custonPrimaryTextColor"
         app:layout_constraintBottom_toTopOf="@+id/btnEmer"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -23,6 +25,7 @@
         android:layout_width="181dp"
         android:layout_height="77dp"
         android:text="@string/btnCallEmer"
+        android:textColor="?attr/custonPrimaryTextColor"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

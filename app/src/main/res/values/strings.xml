@@ -20,4 +20,5 @@
     <string name="txtEmer">SOMENTE EM CASO DE EMERGÊNCIA, \n CLIQUE NO BOTÃO</string>
     <string name="btnCallEmer">LIGAR PARA O SAMU</string>
     <string name="btnTemp">Avaliar temperatura</string>
+    <string name="switchDarkMode">DarkMode</string>
 </resources>
