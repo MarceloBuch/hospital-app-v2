@@ -81,20 +81,11 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if(swiDarkMode.isChecked()) {
-                    AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
-                    builder.setTitle("Dark Mode ligado!")
-                            .setMessage("Para ligar o Dark Mode do app, é necessário que ele seja reiniciado! \n Você quer mesmo fazer isso?")
-                            .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
-                                @Override
-                                public void onClick(DialogInterface dialog, int which) {
-                                    if (preferencesManager.getDarkModeState()) {
-                                        darkMode(false);
-                                    } else {
-                                        darkMode(true);
-                                    }
-                                }
-                            }).setNegativeButton("No", null)
-                            .create().show();
+                    if (preferencesManager.getDarkModeState()) {
+                        darkMode(false);
+                    } else {
+                        darkMode(true);
+                    }
                 }else{
                     setTheme(R.style.AppTheme);
                 }
@@ -104,7 +95,6 @@ public class MainActivity extends AppCompatActivity {
 
     private void darkMode(boolean b) {
         preferencesManager.setDarkModeState(b);
-        Toast.makeText(this,"Você abilitou o Dark Mode!",Toast.LENGTH_SHORT).show();
         Handler handler = new Handler();
         handler.postDelayed(new Runnable() {
             @Override

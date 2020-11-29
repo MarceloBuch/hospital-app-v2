@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimary">#000000</color>
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
-    <color name="colorPrimaryNight">#000000</color>
+    <color name="colorPrimaryNight">#7234FF</color>
     <color name="colorPrimaryDarkNight">#7234FF</color>
     <color name="colorAccentNight">#00FFE6</color>
     <color name="primaryText">#000000</color>
     <color name="secundaryText">#1a1a1a</color>
     <color name="primaryTextNight">#ffffff</color>
     <color name="secundaryTextNight">#cfcfcf</color>
+    <color name="buttonText">#000000</color>
     <color name="cardBG">#ffffff</color>
     <color name="cardBGNight">#1a1a1a</color>
 </resources>
