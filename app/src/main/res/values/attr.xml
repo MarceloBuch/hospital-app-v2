@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="declaredStyle">
+        <attr name="custonBGColor" format="color"></attr>
+        <attr name="custonPrimaryTextColor" format="color"></attr>
+        <attr name="custonSecundaryTextColor" format="color"></attr>
+        <attr name="custonCardBGColor" format="color"></attr>
+    </declare-styleable>
+</resources>

@@ -21,4 +21,14 @@
     <string name="btnCallEmer">LIGAR PARA O SAMU</string>
     <string name="btnTemp">Avaliar temperatura</string>
     <string name="switchDarkMode">DarkMode</string>
+    <string name="btnRegis">Cadastrar usuário</string>
+    <string name="btnSubmit">Enviar</string>
+    <string name="txtName">Nome:</string>
+    <string name="txtCPF">CPF: </string>
+    <string name="txtFone">Telefone: </string>
+    <string name="txtNumCon">Número Convênio:</string>
+    <string name="ediName">Nome</string>
+    <string name="ediCPF">CPF</string>
+    <string name="ediFone">Telefone</string>
+    <string name="ediNumCon">Número Convênio</string>
 </resources>

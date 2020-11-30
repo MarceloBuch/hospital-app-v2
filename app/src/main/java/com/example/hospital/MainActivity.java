@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
     Button btnEmer;
     Button btnTemp;
     Switch swiDarkMode;
+    Button btnRegis;
     AppPreferencesManager preferencesManager;
 
     @Override
@@ -35,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
             setTheme(R.style.AppTheme);
         }
         setContentView(R.layout.activity_main);
+        btnRegis = findViewById(R.id.btnRegister);
         swiDarkMode = findViewById(R.id.dMSwitch);
         btnLink = findViewById(R.id.linkMain);
         btnContact = findViewById(R.id.btnContact);
@@ -106,5 +108,8 @@ public class MainActivity extends AppCompatActivity {
             }
         },1000);
     }
-
+    public void openRegis(View v) {
+        Intent inRegis = new Intent(MainActivity.this, activityRegister.class);
+        startActivity(inRegis);
+    }
 }

@@ -15,10 +15,10 @@
         android:textColor="?attr/custonPrimaryTextColor"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.529"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/changes"
-        app:layout_constraintVertical_bias="0.153" />
+        app:layout_constraintVertical_bias="0.064" />
 
     <Button
         android:id="@+id/btnTemp"
@@ -98,7 +98,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnEmergency" />
+        app:layout_constraintTop_toBottomOf="@+id/btnEmergency"
+        app:layout_constraintVertical_bias="0.69" />
 
     <Switch
         android:id="@+id/dMSwitch"
@@ -112,5 +113,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.222" />
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="openRegis"
+        android:text="@string/btnRegis"
+        app:layout_constraintBottom_toTopOf="@+id/linkMain"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnEmergency" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

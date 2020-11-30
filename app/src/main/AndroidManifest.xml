@@ -15,7 +15,8 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true"
         tools:targetApi="m">
-        <activity android:name=".activityTemp"></activity>
+        <activity android:name=".activityRegister"></activity>
+        <activity android:name=".activityTemp" />
         <activity android:name=".activityEmer" />
         <activity android:name=".activityContact" />
         <activity android:name=".activityLocation" />
